@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage ('Test') {
             steps {
-                withMaven {
-                    sh 'mvn clean'
-                }
+                sh 'mvn clean'
             }
         }
     }
